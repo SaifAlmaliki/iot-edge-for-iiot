@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/azure-sql-edge-premium
+FROM mcr.microsoft.com/azure-sql-edge/developer:latest
 
 USER root
 # USER mssql
