@@ -85,12 +85,7 @@ stages:
       displayName: build publishedNodes.json
 
     # Build Modules Grafana and SqlEdge
-    - task: AzureIoTEdge@2
-      inputs:
-        action: 'Build module images'
-        templateFilePath: '$(ROOT_DIR)/dashboard.deployment.template.json'
-        defaultPlatform: $(BUILD_PLATFORM)
-      displayName: Build Edge Modules Grafana and SqlEdge
+
     
     # Build Modules opcpublisher
     - task: AzureIoTEdge@2
