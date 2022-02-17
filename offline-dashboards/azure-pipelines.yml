@@ -29,14 +29,7 @@ stages:
     steps:
 
     # Determine module verion
-    - task: UseGitVersion@5
-      inputs:
-        versionSpec: '5.x.x'
 
-    # Set container version. 
-    - script: |
-        echo "##vso[task.setvariable variable=CONTAINER_VERSION_TAG]$(GitVersion.AssemblySemVer)" 
-      displayName: Set container version
 
     # replace build initdb.sh
     - task: PowerShell@2
